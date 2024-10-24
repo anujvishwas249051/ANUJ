@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Hut - Delicious Pizzas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script></script> <!-- Replace YOUR_API_KEY with your actual API key -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Pizza Hut</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#order" class="cta-button">Order Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Delicious Pizzas Delivered to Your Door</h1>
+            <p>Experience the best pizza, fresh and hot!</p>
+            <a href="#menu" class="cta-button">See Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT39MyAjGHCyTRYbaxhBVSLOg4TUeUVo4MB6ho45196of4migTDdIavZ8GltObc6FWYio4&usqp=CAU" alt="Pepperoni Pizza">
+                <h3>Pepperoni Pizza</h3>
+                <p>Classic pepperoni with cheese.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT39MyAjGHCyTRYbaxhBVSLOg4TUeUVo4MB6ho45196of4migTDdIavZ8GltObc6FWYio4&usqp=CAU" alt="Veggie Pizza">
+                <h3>Veggie Pizza</h3>
+                <p>Loaded with fresh veggies.</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaYjhFmkbX-NIkFFu-F7R65FCGfxxDsVeHuQ&s" alt="BBQ Chicken Pizza">
+                <h3>BBQ Chicken Pizza</h3>
+                <p>Topped with smoky BBQ chicken.</p>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://static.toiimg.com/thumb/53110049.cms?width=1200&height=900">
+                    <h3>chezz Pizza</h3>
+                    <p>Classic pepperoni with cheese.</p>
+                </div>
+                
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>Pizza Gallery</h2>
+        <div class="gallery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQluqEalDNU2NTPs2a5XUbjsDrlJdlggynlvA&s" alt="https://media.istockphoto.com/id/938742222/photo/cheesy-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=D1z4xPCs-qQIZyUqRcHrnsJSJy_YbUD9udOrXpilNpI=">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFzYeP0wRUa8DN8SF2m6lqDlEqYwV8vyMD9k8N43r75cMRVkJfGZfTRG3fih-OmFTquac&usqp=CAU" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6DP5gdaSP1Pkfg854l5SrJ9pL4X6CP7UJgUH5DJvPOBy1CoZk3RuKwKFjIr1xgk9RPGk&usqp=CAU 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXW-CWB9qtUhrRZxex5Mj8QnpQTowbC6nHWTl0waGRHhPPYd6hxgxZ8rpFgZXA0I4Xr0c&usqp=CAU" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT39MyAjGHCyTRYbaxhBVSLOg4TUeUVo4MB6ho45196of4migTDdIavZ8GltObc6FWYio4&usqp=CAU">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTQJ4A9VXnwRDO_x7jMcB8UhJtWJnv8WpDEusLbw4C5DjFzFuVO-6sKCTOMlAQGbWtNC8&usqp=CAU" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfMhxMPgFmcc_yYgHJ_odtNReUO1h2bTBtrq3icPHGWw_cHUVwihJqOIhTrV9-l1_g5-c&usqp=CAU">
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <!-- <section id="location" class="location-section"> -->
+        <h2>Find Us Here</h2>
+        <div id="map"></div>
+        
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Pizza Hut. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Map Example</title>
+    <style>
+        /* Set the size of the map */
+        #map {
+            height: 500px; /* Adjust the height of the map */
+            width: 100%; /* Full width */
+            border: 1px solid #ccc; /* Optional border */
+        }
+        body {
+            font-family: Arial, sans-serif; /* Font style for the body */
+        }
+        </style>
+        
+</body>
+</html>
